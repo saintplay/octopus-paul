@@ -1,32 +1,56 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="column column-50 column-offset-25">
-        <h3>Posiciones Eliminatorias - Sudamérica</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>N°</th>
-              <th>EQUIPO</th>
-              <th>PTS</th>
-              <th>PG</th>
-              <th>PE</th>
-              <th>PP</th>
-              <th>GF</th>
-              <th>GC</th>
-              <th>DF</th>
-            </tr>
-          </thead>
-          <tbody>
-            <position v-for="(team, teamIndex) in teams" :key="team.code" :team="team" :rank="teamIndex + 1"/>
-          </tbody>
-        </table>
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <h3 class="title is-3">Tabla Posiciones CONMEBOL</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>N°</th>
+                <th>EQUIPO</th>
+                <th>PTS</th>
+                <th>PG</th>
+                <th>PE</th>
+                <th>PP</th>
+                <th>GF</th>
+                <th>GC</th>
+                <th>DF</th>
+              </tr>
+            </thead>
+            <tbody>
+              <position v-for="(team, teamIndex) in teams" :key="team.code" :team="team" :rank="teamIndex + 1"/>
+            </tbody>
+          </table>
+        </div>
 
-        <table>
-          <tbody>
-            <match-resume v-for="match in matches" :key="match.homeTeam + match.awwayTeam" :match="match"/>
-          </tbody>
-        </table>
+        <div v-if="currentEvent === eventCodes.journey" class="column column-30 column-offset-10">
+          <h3 class="title is-3">Partidos de la Jornada</h3>
+          <table class="table">
+            <tbody>
+              <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awwayTeam" :match="match"/>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <nav class="level">
+            <div class="level-item has-text-centered">
+              <button class="button is-info" :disabled="currentEvent === eventCodes.start" @click="previousEvent()">Anterior</button>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">{{ eventToSpanish(currentEvent) }}</p>
+                <p v-if="currentEvent === eventCodes.journey" class="title">{{ currentJourney.journeyNumber }}</p>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <button class="button is-primary"  :disabled="currentEvent === eventCodes.end" @click="nextEvent()">Siguiente</button>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
   </div>
@@ -35,18 +59,43 @@
 <script>
 import Position from './Position'
 import MatchResume from '../Match/MatchResume'
+import { eventCodes, eventToSpanish } from '@/objects/qualifierEvent'
 
 export default {
   name: 'table-wrapper',
-  mounted () {
-    this.matches = require('__static/data/CONMEBOL/calendar').rounds[0].fixture[16].matches
+  created () {
+    this.journeys = require('__static/data/CONMEBOL/calendar').rounds[0].fixture
     this.teams = require('__static/data/CONMEBOL/teams')
+  },
+  mounted () {
+    this.currentJourney = this.journeys[0]
   },
   data () {
     return {
+      currentEvent: eventCodes.journey,
+      currentJourney: {
+        journeyNumber: 0
+      },
+      journeys: [],
       matches: [],
-      teams: []
+      teams: [],
+      eventCodes
     }
+  },
+  methods: {
+    previousEvent () {
+      const journeyNumber = this.currentJourney.journeyNumber - 1
+      const journeyIndex = journeyNumber - 1
+
+      this.currentJourney = this.journeys[journeyIndex]
+    },
+    nextEvent () {
+      const journeyNumber = this.currentJourney.journeyNumber + 1
+      const journeyIndex = journeyNumber - 1
+
+      this.currentJourney = this.journeys[journeyIndex]
+    },
+    eventToSpanish
   },
   components: {
     Position,

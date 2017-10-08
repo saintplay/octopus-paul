@@ -13,14 +13,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import "node_modules/milligram/src/milligram";
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/bulma";
 
 @import "assets/sass/colors";
 @import "assets/sass/animations/all";
 
 body {
-  font-family: 'Roboto Slab', serif;
   background-color: $transparent-gray;
 }
-
 </style>

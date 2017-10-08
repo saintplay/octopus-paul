@@ -1,20 +1,38 @@
 <template>
   <tr>
-    <td>{{ match.homeTeam }}</td>
-    <td>{{ match.results.homeTeamGoals }}</td>
-    <td>{{ match.results.awayTeamGoals }}</td>
-    <td>{{ match.awayTeam }}</td>
+    <td>{{ teamNameByCode(match.homeTeam) | capitalize }}</td>
+    <td>{{ `${match.results.homeTeamGoals} - ${match.results.awayTeamGoals}` }}</td>
+    <td>{{ teamNameByCode(match.awayTeam) | capitalize }}</td>
   </tr>
 </template>
 
 <script>
+import capitalize from '@/filters/capitalize'
+
 export default {
+  name: 'match-resume',
   props: {
     match: {
       type: Object,
       default: null
     }
   },
-  name: 'match-resume'
+  created () {
+    this.teams = require('__static/data/CONMEBOL/teams')
+  },
+  data () {
+    return {
+      teams: []
+    }
+  },
+  filters: {
+    capitalize
+  },
+  methods: {
+    teamNameByCode (teamCode) {
+      const team = this.teams.filter((t) => { return t.code === teamCode })[0]
+      return team.name
+    }
+  }
 }
 </script>
