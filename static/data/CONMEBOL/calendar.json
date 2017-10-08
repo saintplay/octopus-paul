@@ -8,8 +8,8 @@
           "journeyNumber": 1,
           "matches": [
             {
-              "homeTeam": "Colombia",
-              "awayTeam": "Perú",
+              "homeTeam": "CO",
+              "awayTeam": "PE",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 0
@@ -18,8 +18,8 @@
               "stadium": "Estadio Metropolitano Roberto Meléndez"
             },
             {
-              "homeTeam": "Argentina",
-              "awayTeam": "Ecuador",
+              "homeTeam": "AR",
+              "awayTeam": "EC",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 2
@@ -28,8 +28,8 @@
               "stadium": "Monumental Antonio Vespucio Liberti"
             },
             {
-              "homeTeam": "Chile",
-              "awayTeam": "Brasil",
+              "homeTeam": "CL",
+              "awayTeam": "BR",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 0
@@ -38,8 +38,8 @@
               "stadium": "Estadio Nacional J. Martinez Pradanos"
             },
             {
-              "homeTeam": "Venezuela",
-              "awayTeam": "Paraguay",
+              "homeTeam": "VE",
+              "awayTeam": "PY",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 1
@@ -48,8 +48,8 @@
               "stadium": "CTE Cachamay"
             },
             {
-              "homeTeam": "Bolivia",
-              "awayTeam": "Uruguay",
+              "homeTeam": "BO",
+              "awayTeam": "UY",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 2
@@ -63,8 +63,8 @@
           "journeyNumber": 2,
           "matches": [
             {
-              "homeTeam": "Paraguay",
-              "awayTeam": "Argentina",
+              "homeTeam": "PY",
+              "awayTeam": "AR",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 0
@@ -73,8 +73,8 @@
               "stadium": "Defensores del Chaco"
             },
             {
-              "homeTeam": "Brasil",
-              "awayTeam": "Venezuela",
+              "homeTeam": "BR",
+              "awayTeam": "VE",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 1
@@ -83,8 +83,8 @@
               "stadium": "Estádio Cícero Pompeu de Toledo (Morumbi)"
             },
             {
-              "homeTeam": "Ecuador",
-              "awayTeam": "Bolivia",
+              "homeTeam": "EC",
+              "awayTeam": "BO",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 0
@@ -93,8 +93,8 @@
               "stadium": "Olimpico Atahualpa"
             },
             {
-              "homeTeam": "Perú",
-              "awayTeam": "Chile",
+              "homeTeam": "PE",
+              "awayTeam": "CL",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 4
@@ -103,8 +103,8 @@
               "stadium": "Estadio Nacional de Lima"
             },
             {
-              "homeTeam": "Uruguay",
-              "awayTeam": "Colombia",
+              "homeTeam": "UY",
+              "awayTeam": "CO",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 0
@@ -118,8 +118,8 @@
           "journeyNumber": 3,
           "matches": [
             {
-              "homeTeam": "Chile",
-              "awayTeam": "Colombia",
+              "homeTeam": "CL",
+              "awayTeam": "CO",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 1
@@ -128,8 +128,8 @@
               "stadium": "Estadio Nacional J. Martinez Pradanos"
             },
             {
-              "homeTeam": "Argentina",
-              "awayTeam": "Brasil",
+              "homeTeam": "AR",
+              "awayTeam": "BR",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 1
@@ -138,8 +138,8 @@
               "stadium": "Monumental Antonio Vespucio Liberti"
             },
             {
-              "homeTeam": "Ecuador",
-              "awayTeam": "Uruguay",
+              "homeTeam": "EC",
+              "awayTeam": "UY",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -148,8 +148,8 @@
               "stadium": "Olimpico Atahualpa"
             },
             {
-              "homeTeam": "Bolivia",
-              "awayTeam": "Venezuela",
+              "homeTeam": "BO",
+              "awayTeam": "VE",
               "results": {
                 "homeTeamGoals": 4,
                 "awayTeamGoals": 2
@@ -158,8 +158,8 @@
               "stadium": "Hernando Siles"
             },
             {
-              "homeTeam": "Perú",
-              "awayTeam": "Paraguay",
+              "homeTeam": "PE",
+              "awayTeam": "PY",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 0
@@ -173,8 +173,8 @@
           "journeyNumber": 4,
           "matches": [
             {
-              "homeTeam": "Colombia",
-              "awayTeam": "Argentina",
+              "homeTeam": "CO",
+              "awayTeam": "AR",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 1
@@ -183,8 +183,8 @@
               "stadium": "Estadio Metropolitano Roberto Meléndez"
             },
             {
-              "homeTeam": "Paraguay",
-              "awayTeam": "Bolivia",
+              "homeTeam": "PY",
+              "awayTeam": "BO",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -193,8 +193,8 @@
               "stadium": "Defensores del Chaco"
             },
             {
-              "homeTeam": "Brasil",
-              "awayTeam": "Perú",
+              "homeTeam": "BR",
+              "awayTeam": "PE",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 0
@@ -203,8 +203,8 @@
               "stadium": "Estádio Cícero Pompeu de Toledo (Morumbi)"
             },
             {
-              "homeTeam": "Venezuela",
-              "awayTeam": "Ecuador",
+              "homeTeam": "VE",
+              "awayTeam": "EC",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 3
@@ -213,8 +213,8 @@
               "stadium": "CTE Cachamay"
             },
             {
-              "homeTeam": "Uruguay",
-              "awayTeam": "Chile",
+              "homeTeam": "UY",
+              "awayTeam": "CL",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 0
@@ -228,8 +228,8 @@
           "journeyNumber": 5,
           "matches": [
             {
-              "homeTeam": "Bolivia",
-              "awayTeam": "Colombia",
+              "homeTeam": "BO",
+              "awayTeam": "CO",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 3
@@ -238,8 +238,8 @@
               "stadium": "Hernando Siles"
             },
             {
-              "homeTeam": "Brasil",
-              "awayTeam": "Uruguay",
+              "homeTeam": "BR",
+              "awayTeam": "UY",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 2
@@ -248,8 +248,8 @@
               "stadium": "Estádio Cícero Pompeu de Toledo (Morumbi)"
             },
             {
-              "homeTeam": "Chile",
-              "awayTeam": "Argentina",
+              "homeTeam": "CL",
+              "awayTeam": "AR",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 2
@@ -258,8 +258,8 @@
               "stadium": "Estadio Nacional J. Martinez Pradanos"
             },
             {
-              "homeTeam": "Ecuador",
-              "awayTeam": "Paraguay",
+              "homeTeam": "EC",
+              "awayTeam": "PY",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 2
@@ -268,8 +268,8 @@
               "stadium": "Olimpico Atahualpa"
             },
             {
-              "homeTeam": "Perú",
-              "awayTeam": "Venezuela",
+              "homeTeam": "PE",
+              "awayTeam": "VE",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 2
@@ -283,8 +283,8 @@
           "journeyNumber": 6,
           "matches": [
             {
-              "homeTeam": "Argentina",
-              "awayTeam": "Bolivia",
+              "homeTeam": "AR",
+              "awayTeam": "BO",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 0
@@ -293,8 +293,8 @@
               "stadium": "Monumental Antonio Vespucio Liberti"
             },
             {
-              "homeTeam": "Colombia",
-              "awayTeam": "Ecuador",
+              "homeTeam": "CO",
+              "awayTeam": "EC",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 1
@@ -303,8 +303,8 @@
               "stadium": "Estadio Metropolitano Roberto Meléndez"
             },
             {
-              "homeTeam": "Paraguay",
-              "awayTeam": "Brasil",
+              "homeTeam": "PY",
+              "awayTeam": "BR",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 2
@@ -313,8 +313,8 @@
               "stadium": "Defensores del Chaco"
             },
             {
-              "homeTeam": "Uruguay",
-              "awayTeam": "Perú",
+              "homeTeam": "UY",
+              "awayTeam": "PE",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 0
@@ -323,8 +323,8 @@
               "stadium": "Estadio Centenario"
             },
             {
-              "homeTeam": "Venezuela",
-              "awayTeam": "Chile",
+              "homeTeam": "VE",
+              "awayTeam": "CL",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 4
@@ -338,8 +338,8 @@
           "journeyNumber": 7,
           "matches": [
             {
-              "homeTeam": "Argentina",
-              "awayTeam": "Uruguay",
+              "homeTeam": "AR",
+              "awayTeam": "UY",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 0
@@ -348,8 +348,8 @@
               "stadium": "Monumental Antonio Vespucio Liberti"
             },
             {
-              "homeTeam": "Bolivia",
-              "awayTeam": "Perú",
+              "homeTeam": "BO",
+              "awayTeam": "PE",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 3
@@ -358,8 +358,8 @@
               "stadium": "Hernando Siles"
             },
             {
-              "homeTeam": "Colombia",
-              "awayTeam": "Venezuela",
+              "homeTeam": "CO",
+              "awayTeam": "VE",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 0
@@ -368,8 +368,8 @@
               "stadium": "Estadio Metropolitano Roberto Meléndez"
             },
             {
-              "homeTeam": "Ecuador",
-              "awayTeam": "Brasil",
+              "homeTeam": "EC",
+              "awayTeam": "BR",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 3
@@ -378,8 +378,8 @@
               "stadium": "Olimpico Atahualpa"
             },
             {
-              "homeTeam": "Paraguay",
-              "awayTeam": "Chile",
+              "homeTeam": "PY",
+              "awayTeam": "CL",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -393,8 +393,8 @@
           "journeyNumber": 8,
           "matches": [
             {
-              "homeTeam": "Brasil",
-              "awayTeam": "Colombia",
+              "homeTeam": "BR",
+              "awayTeam": "CO",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -403,8 +403,8 @@
               "stadium": "Estádio Cícero Pompeu de Toledo (Morumbi)"
             },
             {
-              "homeTeam": "Chile",
-              "awayTeam": "Bolivia",
+              "homeTeam": "CL",
+              "awayTeam": "BO",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 0
@@ -413,8 +413,8 @@
               "stadium": "Estadio Nacional J. Martinez Pradanos"
             },
             {
-              "homeTeam": "Perú",
-              "awayTeam": "Ecuador",
+              "homeTeam": "PE",
+              "awayTeam": "EC",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -423,8 +423,8 @@
               "stadium": "Estadio Nacional de Lima"
             },
             {
-              "homeTeam": "Uruguay",
-              "awayTeam": "Paraguay",
+              "homeTeam": "UY",
+              "awayTeam": "PY",
               "results": {
                 "homeTeamGoals": 4,
                 "awayTeamGoals": 0
@@ -433,8 +433,8 @@
               "stadium": "Estadio Centenario"
             },
             {
-              "homeTeam": "Venezuela",
-              "awayTeam": "Argentina",
+              "homeTeam": "VE",
+              "awayTeam": "AR",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 2
@@ -448,8 +448,8 @@
           "journeyNumber": 9,
           "matches": [
             {
-              "homeTeam": "Brasil",
-              "awayTeam": "Bolivia",
+              "homeTeam": "BR",
+              "awayTeam": "BO",
               "results": {
                 "homeTeamGoals": 5,
                 "awayTeamGoals": 0
@@ -458,8 +458,8 @@
               "stadium": "Estádio Cícero Pompeu de Toledo (Morumbi)"
             },
             {
-              "homeTeam": "Ecuador",
-              "awayTeam": "Chile",
+              "homeTeam": "EC",
+              "awayTeam": "CL",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 0
@@ -468,8 +468,8 @@
               "stadium": "Olimpico Atahualpa"
             },
             {
-              "homeTeam": "Paraguay",
-              "awayTeam": "Colombia",
+              "homeTeam": "PY",
+              "awayTeam": "CO",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 1
@@ -478,8 +478,8 @@
               "stadium": "Defensores del Chaco"
             },
             {
-              "homeTeam": "Perú",
-              "awayTeam": "Argentina",
+              "homeTeam": "PE",
+              "awayTeam": "AR",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 2
@@ -488,8 +488,8 @@
               "stadium": "Estadio Nacional de Lima"
             },
             {
-              "homeTeam": "Uruguay",
-              "awayTeam": "Venezuela",
+              "homeTeam": "UY",
+              "awayTeam": "VE",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 0
@@ -503,8 +503,8 @@
           "journeyNumber": 10,
           "matches": [
             {
-              "homeTeam": "Argentina",
-              "awayTeam": "Paraguay",
+              "homeTeam": "AR",
+              "awayTeam": "PY",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 1
@@ -512,8 +512,8 @@
               "date": "2016-10-12T01:30:00",
               "stadium": "Monumental Antonio Vespucio Liberti"
             },{
-              "homeTeam": "Bolivia",
-              "awayTeam": "Ecuador",
+              "homeTeam": "BO",
+              "awayTeam": "EC",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 2
@@ -521,8 +521,8 @@
               "date": "2016-10-11T22:00:00",
               "stadium": "Hernando Siles"
             },{
-              "homeTeam": "Chile",
-              "awayTeam": "Perú",
+              "homeTeam": "CL",
+              "awayTeam": "PE",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -530,8 +530,8 @@
               "date": "2016-10-12T01:30:00",
               "stadium": "Estadio Nacional J. Martinez Pradanos"
             },{
-              "homeTeam": "Colombia",
-              "awayTeam": "Uruguay",
+              "homeTeam": "CO",
+              "awayTeam": "UY",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 2
@@ -539,8 +539,8 @@
               "date": "2016-10-11T22:30:00",
               "stadium": "Estadio Metropolitano Roberto Meléndez"
             },{
-              "homeTeam": "Venezuela",
-              "awayTeam": "Brasil",
+              "homeTeam": "VE",
+              "awayTeam": "BR",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 2
@@ -554,8 +554,8 @@
           "journeyNumber": 11,
           "matches": [
             {
-              "homeTeam": "Brasil",
-              "awayTeam": "Argentina",
+              "homeTeam": "BR",
+              "awayTeam": "AR",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 0
@@ -564,8 +564,8 @@
               "stadium": "Estádio Cícero Pompeu de Toledo (Morumbi)"
             },
             {
-              "homeTeam": "Colombia",
-              "awayTeam": "Chile",
+              "homeTeam": "CO",
+              "awayTeam": "CL",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 0
@@ -574,8 +574,8 @@
               "stadium": "Estadio Metropolitano Roberto Meléndez"
             },
             {
-              "homeTeam": "Paraguay",
-              "awayTeam": "Perú",
+              "homeTeam": "PY",
+              "awayTeam": "PE",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 4
@@ -584,8 +584,8 @@
               "stadium": "Defensores del Chaco"
             },
             {
-              "homeTeam": "Uruguay",
-              "awayTeam": "Ecuador",
+              "homeTeam": "UY",
+              "awayTeam": "EC",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -594,8 +594,8 @@
               "stadium": "Estadio Centenario"
             },
             {
-              "homeTeam": "Venezuela",
-              "awayTeam": "Bolivia",
+              "homeTeam": "VE",
+              "awayTeam": "BO",
               "results": {
                 "homeTeamGoals": 5,
                 "awayTeamGoals": 0
@@ -609,8 +609,8 @@
           "journeyNumber": 12,
           "matches": [
             {
-              "homeTeam": "Argentina",
-              "awayTeam": "Colombia",
+              "homeTeam": "AR",
+              "awayTeam": "CO",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 0
@@ -619,8 +619,8 @@
               "stadium": "Monumental Antonio Vespucio Liberti"
             },
             {
-              "homeTeam": "Bolivia",
-              "awayTeam": "Paraguay",
+              "homeTeam": "BO",
+              "awayTeam": "PY",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 0
@@ -629,8 +629,8 @@
               "stadium": "Hernando Siles"
             },
             {
-              "homeTeam": "Chile",
-              "awayTeam": "Uruguay",
+              "homeTeam": "CL",
+              "awayTeam": "UY",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 1
@@ -639,8 +639,8 @@
               "stadium": "Estadio Nacional J. Martinez Pradanos"
             },
             {
-              "homeTeam": "Ecuador",
-              "awayTeam": "Venezuela",
+              "homeTeam": "EC",
+              "awayTeam": "VE",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 0
@@ -649,8 +649,8 @@
               "stadium": "Olimpico Atahualpa"
             },
             {
-              "homeTeam": "Perú",
-              "awayTeam": "Brasil",
+              "homeTeam": "PE",
+              "awayTeam": "BR",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 2
@@ -664,8 +664,8 @@
           "journeyNumber": 13,
           "matches": [
             {
-              "homeTeam": "Argentina",
-              "awayTeam": "Chile",
+              "homeTeam": "AR",
+              "awayTeam": "CL",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 0
@@ -673,8 +673,8 @@
               "date": "2017-03-24T00:30:00",
               "stadium": "Monumental Antonio Vespucio Liberti"
             },{
-              "homeTeam": "Colombia",
-              "awayTeam": "Bolivia",
+              "homeTeam": "CO",
+              "awayTeam": "BO",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 0
@@ -682,8 +682,8 @@
               "date": "2017-03-23T21:30:00",
               "stadium": "Estadio Metropolitano Roberto Meléndez"
             },{
-              "homeTeam": "Paraguay",
-              "awayTeam": "Ecuador",
+              "homeTeam": "PY",
+              "awayTeam": "EC",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -691,8 +691,8 @@
               "date": "2017-03-24T00:01:00",
               "stadium": "Defensores del Chaco"
             },{
-              "homeTeam": "Uruguay",
-              "awayTeam": "Brasil",
+              "homeTeam": "UY",
+              "awayTeam": "BR",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 4
@@ -700,8 +700,8 @@
               "date": "2017-03-24T00:01:00",
               "stadium": "Estadio Centenario"
             },{
-              "homeTeam": "Venezuela",
-              "awayTeam": "Perú",
+              "homeTeam": "VE",
+              "awayTeam": "PE",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 2
@@ -715,8 +715,8 @@
           "journeyNumber": 14,
           "matches": [
             {
-              "homeTeam": "Bolivia",
-              "awayTeam": "Argentina",
+              "homeTeam": "BO",
+              "awayTeam": "AR",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 0
@@ -724,8 +724,8 @@
               "date": "2017-03-28T22:00:00",
               "stadium": "Hernando Siles"
             },{
-              "homeTeam": "Brasil",
-              "awayTeam": "Paraguay",
+              "homeTeam": "BR",
+              "awayTeam": "PY",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 0
@@ -733,8 +733,8 @@
               "date": "2017-03-29T02:45:00",
               "stadium": "Estádio Cícero Pompeu de Toledo (Morumbi)"
             },{
-              "homeTeam": "Chile",
-              "awayTeam": "Venezuela",
+              "homeTeam": "CL",
+              "awayTeam": "VE",
               "results": {
                 "homeTeamGoals": 3,
                 "awayTeamGoals": 1
@@ -742,8 +742,8 @@
               "date": "2017-03-29T00:01:00",
               "stadium": "Estadio Nacional J. Martinez Pradanos"
             },{
-              "homeTeam": "Ecuador",
-              "awayTeam": "Colombia",
+              "homeTeam": "EC",
+              "awayTeam": "CO",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 2
@@ -751,8 +751,8 @@
               "date": "2017-03-28T23:00:00",
               "stadium": "Olimpico Atahualpa"
             },{
-              "homeTeam": "Perú",
-              "awayTeam": "Uruguay",
+              "homeTeam": "PE",
+              "awayTeam": "UY",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -766,8 +766,8 @@
           "journeyNumber": 15,
           "matches": [
             {
-              "homeTeam": "Brasil",
-              "awayTeam": "Ecuador",
+              "homeTeam": "BR",
+              "awayTeam": "EC",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 0
@@ -775,8 +775,8 @@
               "date": "2017-09-01T02:45:00",
               "stadium": "Estádio Cícero Pompeu de Toledo (Morumbi)"
             },{
-              "homeTeam": "Chile",
-              "awayTeam": "Paraguay",
+              "homeTeam": "CL",
+              "awayTeam": "PY",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 3
@@ -784,8 +784,8 @@
               "date": "2017-09-01T00:30:00",
               "stadium": "Estadio Nacional J. Martinez Pradanos"
             },{
-              "homeTeam": "Perú",
-              "awayTeam": "Bolivia",
+              "homeTeam": "PE",
+              "awayTeam": "BO",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -793,8 +793,8 @@
               "date": "2017-09-01T04:15:00",
               "stadium": "Estadio Nacional de Lima"
             },{
-              "homeTeam": "Uruguay",
-              "awayTeam": "Argentina",
+              "homeTeam": "UY",
+              "awayTeam": "AR",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 0
@@ -802,8 +802,8 @@
               "date": "2017-09-01T01:00:00",
               "stadium": "Estadio Centenario"
             },{
-              "homeTeam": "Venezuela",
-              "awayTeam": "Colombia",
+              "homeTeam": "VE",
+              "awayTeam": "CO",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 0
@@ -817,8 +817,8 @@
           "journeyNumber": 16,
           "matches": [
             {
-              "homeTeam": "Argentina",
-              "awayTeam": "Venezuela",
+              "homeTeam": "AR",
+              "awayTeam": "VE",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 1
@@ -826,8 +826,8 @@
               "date": "2017-09-06T01:30:00",
               "stadium": "Monumental Antonio Vespucio Liberti"
             },{
-              "homeTeam": "Bolivia",
-              "awayTeam": "Chile",
+              "homeTeam": "BO",
+              "awayTeam": "CL",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 0
@@ -835,8 +835,8 @@
               "date": "2017-09-05T22:00:00",
               "stadium": "Hernando Siles"
             },{
-              "homeTeam": "Colombia",
-              "awayTeam": "Brasil",
+              "homeTeam": "CO",
+              "awayTeam": "BR",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 1
@@ -844,8 +844,8 @@
               "date": "2017-09-05T22:30:00",
               "stadium": "Estadio Metropolitano Roberto Meléndez"
             },{
-              "homeTeam": "Ecuador",
-              "awayTeam": "Perú",
+              "homeTeam": "EC",
+              "awayTeam": "PE",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 2
@@ -853,8 +853,8 @@
               "date": "2017-09-05T23:00:00",
               "stadium": "Olimpico Atahualpa"
             },{
-              "homeTeam": "Paraguay",
-              "awayTeam": "Uruguay",
+              "homeTeam": "PY",
+              "awayTeam": "UY",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 2
@@ -868,8 +868,8 @@
           "journeyNumber": 17,
           "matches": [
             {
-              "homeTeam": "Argentina",
-              "awayTeam": "Perú",
+              "homeTeam": "AR",
+              "awayTeam": "PE",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 0
@@ -877,8 +877,8 @@
               "date": "2017-10-06T01:30:00",
               "stadium": "Monumental Antonio Vespucio Liberti"
             },{
-              "homeTeam": "Bolivia",
-              "awayTeam": "Brasil",
+              "homeTeam": "BO",
+              "awayTeam": "BR",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 0
@@ -886,8 +886,8 @@
               "date": "2017-10-05T22:00:00",
               "stadium": "Hernando Siles"
             },{
-              "homeTeam": "Chile",
-              "awayTeam": "Ecuador",
+              "homeTeam": "CL",
+              "awayTeam": "EC",
               "results": {
                 "homeTeamGoals": 2,
                 "awayTeamGoals": 1
@@ -895,8 +895,8 @@
               "date": "2017-10-06T01:30:00",
               "stadium": "Estadio Nacional J. Martinez Pradanos"
             },{
-              "homeTeam": "Colombia",
-              "awayTeam": "Paraguay",
+              "homeTeam": "CO",
+              "awayTeam": "PY",
               "results": {
                 "homeTeamGoals": 1,
                 "awayTeamGoals": 2
@@ -904,8 +904,8 @@
               "date": "2017-10-06T01:30:00",
               "stadium": "Estadio Metropolitano Roberto Meléndez"
             },{
-              "homeTeam": "Venezuela",
-              "awayTeam": "Uruguay",
+              "homeTeam": "VE",
+              "awayTeam": "UY",
               "results": {
                 "homeTeamGoals": 0,
                 "awayTeamGoals": 0
@@ -920,32 +920,32 @@
           "noStartedYet": true,
           "matches": [
             {
-              "homeTeam": "Brasil",
-              "awayTeam": "Chile",
+              "homeTeam": "BR",
+              "awayTeam": "CL",
               "date": "2017-10-11T01:30:00",
               "stadium": "Estádio Cícero Pompeu de Toledo (Morumbi)"
             },
             {
-              "homeTeam": "Ecuador",
-              "awayTeam": "Argentina",
+              "homeTeam": "EC",
+              "awayTeam": "AR",
               "date": "2017-10-11T01:30:00",
               "stadium": "Olimpico Atahualpa"
             },
             {
-              "homeTeam": "Paraguay",
-              "awayTeam": "Venezuela",
+              "homeTeam": "PY",
+              "awayTeam": "VE",
               "date": "2017-10-11T01:30:00",
               "stadium": "Defensores del Chaco"
             },
             {
-              "homeTeam": "Perú",
-              "awayTeam": "Colombia",
+              "homeTeam": "PE",
+              "awayTeam": "CO",
               "date": "2017-10-11T01:30:00",
               "stadium": "Estadio Nacional de Lima"
             },
             {
-              "homeTeam": "Uruguay",
-              "awayTeam": "Bolivia",
+              "homeTeam": "UY",
+              "awayTeam": "BO",
               "date": "2017-10-11T01:30:00",
               "stadium": "Estadio Centenario"
             }            
