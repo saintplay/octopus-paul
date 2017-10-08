@@ -15,6 +15,6 @@ export default {
       default: null
     }
   },
-  name: 'match-resumer'
+  name: 'match-resume'
 }
 </script>

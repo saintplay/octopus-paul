@@ -18,15 +18,7 @@
             </tr>
           </thead>
           <tbody>
-            <position/>
-            <position/>
-            <position/>
-            <position/>
-            <position/>
-            <position/>
-            <position/>
-            <position/>
-            <position/>
+            <position v-for="(team, teamIndex) in teams" :key="team.code" :team="team" :rank="teamIndex + 1"/>
           </tbody>
         </table>
 
@@ -48,11 +40,12 @@ export default {
   name: 'table-wrapper',
   mounted () {
     this.matches = require('__static/data/CONMEBOL/calendar').rounds[0].fixture[16].matches
-    console.log(this.matches)
+    this.teams = require('__static/data/CONMEBOL/teams')
   },
   data () {
     return {
-      matches: []
+      matches: [],
+      teams: []
     }
   },
   components: {
