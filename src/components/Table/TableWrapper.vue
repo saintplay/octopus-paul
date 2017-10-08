@@ -18,31 +18,29 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Brasil</td>
-              <td>38</td>
-              <td>11</td>
-              <td>5</td>
-              <td>1</td>
-              <td>38</td>
-              <td>11</td>
-              <td>27</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Uruguay</td>
-              <td>28</td>
-              <td>8</td>
-              <td>4</td>
-              <td>5</td>
-              <td>28</td>
-              <td>18</td>
-              <td>10</td>
-            </tr>
+            <position/>
+            <position/>
+            <position/>
+            <position/>
+            <position/>
+            <position/>
+            <position/>
+            <position/>
+            <position/>
           </tbody>
         </table>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import Position from './Position'
+
+export default {
+  name: 'table-wrapper',
+  components: {
+    Position
+  }
+}
+</script>
