@@ -1,0 +1,42 @@
+[
+  {
+    "code": "AR",
+    "name": "argentina"
+  },
+  {
+    "code": "BO",
+    "name": "bolivia"
+  },
+  {
+    "code": "BR",
+    "name": "brazil"
+  },
+  {
+    "code": "CL",
+    "name": "chile"
+  },
+  {
+    "code": "CO",
+    "name": "colombia"
+  },
+  {
+    "code": "ec",
+    "name": "ecuador"
+  },
+  {
+    "code": "PY",
+    "name": "paraguay"
+  },
+  {
+    "code": "PE",
+    "name": "peru"
+  },
+  {
+    "code": "UY",
+    "name": "uruguay"
+  },
+  {
+    "code": "VE",
+    "name": "venezuela"
+  }
+]

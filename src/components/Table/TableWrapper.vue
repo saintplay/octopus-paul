@@ -29,6 +29,12 @@
             <position/>
           </tbody>
         </table>
+
+        <table>
+          <tbody>
+            <match-resume v-for="match in matches" :key="match.homeTeam + match.awwayTeam" :match="match"/>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -36,11 +42,22 @@
 
 <script>
 import Position from './Position'
+import MatchResume from '../Match/MatchResume'
 
 export default {
   name: 'table-wrapper',
+  mounted () {
+    this.matches = require('__static/data/CONMEBOL/calendar').rounds[0].fixture[16].matches
+    console.log(this.matches)
+  },
+  data () {
+    return {
+      matches: []
+    }
+  },
   components: {
-    Position
+    Position,
+    MatchResume
   }
 }
 </script>
