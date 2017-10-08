@@ -25,8 +25,8 @@
         </div>
 
         <div v-if="currentEvent === eventCodes.journey" class="column column-30 column-offset-10">
-          <h3 class="title is-3">Partidos de la Jornada</h3>
-          <table class="table">
+          <h3 class="title is-3">Partidos de la Jornada {{ currentJourney.journeyNumber | twoDigitalize }}</h3>
+          <table class="table journey-matches-table">
             <tbody>
               <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awwayTeam" :match="match"/>
             </tbody>
@@ -43,7 +43,7 @@
             <div class="level-item has-text-centered">
               <div>
                 <p class="heading">{{ eventToSpanish(currentEvent) }}</p>
-                <p v-if="currentEvent === eventCodes.journey" class="title">{{ currentJourney.journeyNumber }}</p>
+                <p v-if="currentEvent === eventCodes.journey" class="title">{{ currentJourney.journeyNumber | twoDigitalize }}</p>
               </div>
             </div>
             <div class="level-item has-text-centered">
@@ -60,6 +60,7 @@
 import Position from './Position'
 import MatchResume from '../Match/MatchResume'
 import { eventCodes, eventToSpanish } from '@/objects/qualifierEvent'
+import twoDigitalize from '@/filters/twoDigitalize'
 
 export default {
   name: 'table-wrapper',
@@ -82,6 +83,9 @@ export default {
       eventCodes
     }
   },
+  filters: {
+    twoDigitalize
+  },
   methods: {
     previousEvent () {
       const journeyNumber = this.currentJourney.journeyNumber - 1
@@ -103,3 +107,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+table.journey-matches-table {
+  min-width: 420px;
+}
+</style>
+

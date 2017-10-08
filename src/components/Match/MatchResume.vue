@@ -1,8 +1,18 @@
 <template>
   <tr>
-    <td>{{ teamNameByCode(match.homeTeam) | capitalize }}</td>
-    <td>{{ `${match.results.homeTeamGoals} - ${match.results.awayTeamGoals}` }}</td>
-    <td>{{ teamNameByCode(match.awayTeam) | capitalize }}</td>
+    <td class="has-text-centered team-column">{{ teamNameByCode(match.homeTeam) | capitalize }}</td>
+    <td class="has-text-centered">
+      <strong>
+        {{ match.results.homeTeamGoals }}
+      </strong>
+      <span>
+        -
+      </span>
+      <strong>
+        {{ match.results.awayTeamGoals }}
+      </strong>
+    </td>
+    <td class="has-text-centered team-column">{{ teamNameByCode(match.awayTeam) | capitalize }}</td>
   </tr>
 </template>
 
@@ -36,3 +46,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+td.team-column {
+  min-width: 180px;
+}
+</style>
+

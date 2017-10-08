@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue/dist/vue.runtime.esm.js'
 import App from './App'
 import router from './router'
 
