@@ -28,7 +28,7 @@
           <h3 class="title is-3">Partidos de la Jornada {{ currentJourney.journeyNumber | twoDigitalize }}</h3>
           <table class="table journey-matches-table">
             <tbody>
-              <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awwayTeam" :match="match"/>
+              <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awayTeam" :match="match"/>
             </tbody>
           </table>
         </div>
@@ -61,12 +61,14 @@ import Position from './Position'
 import MatchResume from '../Match/MatchResume'
 import { eventCodes, eventToSpanish } from '@/objects/qualifierEvent'
 import twoDigitalize from '@/filters/twoDigitalize'
+import { teamNameByCode, setScoresToZero } from '@/objects/team'
 
 export default {
   name: 'table-wrapper',
   created () {
     this.journeys = require('__static/data/CONMEBOL/calendar').rounds[0].fixture
     this.teams = require('__static/data/CONMEBOL/teams')
+    setScoresToZero(this.teams)
   },
   mounted () {
     this.currentJourney = this.journeys[0]
@@ -98,6 +100,35 @@ export default {
       const journeyIndex = journeyNumber - 1
 
       this.currentJourney = this.journeys[journeyIndex]
+
+      this.currentJourney.matches.forEach((match) => {
+        let homeTeam = teamNameByCode(match.homeTeam, this.teams)
+        let awayTeam = teamNameByCode(match.awayTeam, this.teams)
+
+        homeTeam.goalsFor += match.results.homeTeamGoals
+        awayTeam.goalsAgainst += match.results.homeTeamGoals
+
+        awayTeam.goalsFor += match.results.awayTeamGoals
+        homeTeam.goalsAgainst += match.results.awayTeamGoals
+
+        if (match.results.homeTeamGoals > match.results.awayTeamGoals) {
+          homeTeam.won ++
+          awayTeam.lost ++
+
+          homeTeam.points += 3
+        } else if (match.results.homeTeamGoals < match.results.awayTeamGoals) {
+          homeTeam.lost ++
+          awayTeam.won ++
+
+          awayTeam.points += 3
+        } else {
+          homeTeam.draw ++
+          awayTeam.draw ++
+
+          homeTeam.points += 1
+          awayTeam.points += 1
+        }
+      }, this)
     },
     eventToSpanish
   },
