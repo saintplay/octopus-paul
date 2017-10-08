@@ -2,10 +2,10 @@
   "confederation": "CONMEBOL",
   "rounds": [
     {
-      "numberRound": 1,
+      "numberRound": 0,
       "fixture": [
         {
-          "journeyNumber": 1,
+          "journeyNumber": 0,
           "matches": [
             {
               "homeTeam": "CO",
@@ -60,7 +60,7 @@
           ]
         },
         {
-          "journeyNumber": 2,
+          "journeyNumber": 1,
           "matches": [
             {
               "homeTeam": "PY",
@@ -115,7 +115,7 @@
           ]
         },
         {
-          "journeyNumber": 3,
+          "journeyNumber": 2,
           "matches": [
             {
               "homeTeam": "CL",
@@ -170,7 +170,7 @@
           ]
         },
         {
-          "journeyNumber": 4,
+          "journeyNumber": 3,
           "matches": [
             {
               "homeTeam": "CO",
@@ -225,7 +225,7 @@
           ]
         },
         {
-          "journeyNumber": 5,
+          "journeyNumber": 4,
           "matches": [
             {
               "homeTeam": "BO",
@@ -280,7 +280,7 @@
           ]
         },
         {
-          "journeyNumber": 6,
+          "journeyNumber": 5,
           "matches": [
             {
               "homeTeam": "AR",
@@ -335,7 +335,7 @@
           ]
         },
         {
-          "journeyNumber": 7,
+          "journeyNumber": 6,
           "matches": [
             {
               "homeTeam": "AR",
@@ -390,7 +390,7 @@
           ]
         },
         {
-          "journeyNumber": 8,
+          "journeyNumber": 7,
           "matches": [
             {
               "homeTeam": "BR",
@@ -445,7 +445,7 @@
           ]
         },
         {
-          "journeyNumber": 9,
+          "journeyNumber": 8,
           "matches": [
             {
               "homeTeam": "BR",
@@ -500,7 +500,7 @@
           ]
         },
         {
-          "journeyNumber": 10,
+          "journeyNumber": 9,
           "matches": [
             {
               "homeTeam": "AR",
@@ -551,7 +551,7 @@
           ]
         },
         {
-          "journeyNumber": 11,
+          "journeyNumber": 10,
           "matches": [
             {
               "homeTeam": "BR",
@@ -606,7 +606,7 @@
           ]
         },
         {
-          "journeyNumber": 12,
+          "journeyNumber": 11,
           "matches": [
             {
               "homeTeam": "AR",
@@ -661,7 +661,7 @@
           ]
         },
         {
-          "journeyNumber": 13,
+          "journeyNumber": 12,
           "matches": [
             {
               "homeTeam": "AR",
@@ -712,7 +712,7 @@
           ]
         },
         {
-          "journeyNumber": 14,
+          "journeyNumber": 13,
           "matches": [
             {
               "homeTeam": "BO",
@@ -763,7 +763,7 @@
           ]
         },
         {
-          "journeyNumber": 15,
+          "journeyNumber": 14,
           "matches": [
             {
               "homeTeam": "BR",
@@ -814,7 +814,7 @@
           ]
         },
         {
-          "journeyNumber": 16,
+          "journeyNumber": 15,
           "matches": [
             {
               "homeTeam": "AR",
@@ -865,7 +865,7 @@
           ]
         },
         {
-          "journeyNumber": 17,
+          "journeyNumber": 16,
           "matches": [
             {
               "homeTeam": "AR",
@@ -916,7 +916,7 @@
           ]
         },
         {
-          "journeyNumber": 18,
+          "journeyNumber": 17,
           "noStartedYet": true,
           "matches": [
             {

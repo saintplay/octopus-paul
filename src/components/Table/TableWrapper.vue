@@ -25,7 +25,7 @@
         </div>
 
         <div v-if="currentEvent === eventCodes.journey" class="column column-30 column-offset-10">
-          <h3 class="title is-3">Partidos de la Jornada {{ currentJourney.journeyNumber | twoDigitalize }}</h3>
+          <h3 class="title is-3">Partidos de la Jornada {{ currentJourney.journeyNumber + 1 | twoDigitalize }}</h3>
           <table class="table journey-matches-table">
             <tbody>
               <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awayTeam" :match="match"/>
@@ -43,7 +43,7 @@
             <div class="level-item has-text-centered">
               <div>
                 <p class="heading">{{ eventToSpanish(currentEvent) }}</p>
-                <p v-if="currentEvent === eventCodes.journey" class="title">{{ currentJourney.journeyNumber | twoDigitalize }}</p>
+                <p v-if="currentEvent === eventCodes.journey" class="title">{{ currentJourney.journeyNumber + 1 | twoDigitalize }}</p>
               </div>
             </div>
             <div class="level-item has-text-centered">
@@ -70,12 +70,9 @@ export default {
     this.teams = require('__static/data/CONMEBOL/teams')
     setScoresToZero(this.teams)
   },
-  mounted () {
-    this.currentJourney = this.journeys[0]
-  },
   data () {
     return {
-      currentEvent: eventCodes.journey,
+      currentEvent: eventCodes.start,
       currentJourney: {
         journeyNumber: 0
       },
@@ -90,8 +87,15 @@ export default {
   },
   methods: {
     previousEvent () {
+      if (this.currentEvent === eventCodes.end) {
+        this.currentEvent = eventCodes.journey
+      }
+
       const journeyNumber = this.currentJourney.journeyNumber - 1
-      const journeyIndex = journeyNumber - 1
+
+      if (this.currentJourney.journeyNumber === 0) {
+        this.currentEvent = eventCodes.start
+      }
 
       this.currentJourney.matches.forEach((match) => {
         let homeTeam = teamNameByCode(match.homeTeam, this.teams)
@@ -122,13 +126,25 @@ export default {
         }
       }, this)
 
-      this.currentJourney = this.journeys[journeyIndex]
+      if (this.currentEvent !== eventCodes.start) {
+        this.currentJourney = this.journeys[journeyNumber]
+      }
     },
     nextEvent () {
-      const journeyNumber = this.currentJourney.journeyNumber + 1
-      const journeyIndex = journeyNumber - 1
+      let journeyNumber = this.currentJourney.journeyNumber + 1
 
-      this.currentJourney = this.journeys[journeyIndex]
+      if (this.currentEvent === eventCodes.start) {
+        this.currentEvent = eventCodes.journey
+        journeyNumber = 0
+      }
+
+      if (this.currentJourney.journeyNumber === this.journeys.length) {
+        this.currentEvent = eventCodes.end
+        this.currentJourney = { journeyNumber: this.journeys.length }
+        return
+      }
+
+      this.currentJourney = this.journeys[journeyNumber]
 
       this.currentJourney.matches.forEach((match) => {
         let homeTeam = teamNameByCode(match.homeTeam, this.teams)
