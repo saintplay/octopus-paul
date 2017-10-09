@@ -1,21 +1,38 @@
-# octopus-paul
+# OCTOPUS PAUL
 
 > Calculadora interactiva para las eliminatorias del mundial
 
-## Build Setup
+Demo: <http://octopus-paul.netlify.com/>
 
+## Funcionalidades
+
+- [X] Ver el histórico de la tabla de posiciones
+- [ ] Hacer predicciones
+- [ ] Mostrar las posibilidades para que un equipo clasifique de manera gráfica
+- [ ] Estadísticas
+- [ ] Adaptación de Octopus Paul para el mundial de Russia 
+- Sugiere más abriendo un *issue*
+
+## Guía de contribución
+> Todavía falta establecer
+
+Porfavor revisar el [tablero TODO](https://github.com/saintplay/octopus-paul/projects/1) y los issues en el entretiempo
+
+
+## Instalación y Commpilación
 ``` bash
-# install dependencies
+# Para instalar las dependencias
 npm install
+# or
+yarn install
 
-# serve with hot reload at localhost:8080
+# Iniciar la aplicación en  localhost:8080
 npm run dev
+# or
+yarn dev
 
-# build for production with minification
+# Compilar la aplicación para producción
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+# or
+yarn build
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
