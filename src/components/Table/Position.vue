@@ -8,7 +8,6 @@
     <td>{{ team.lost }}</td>
     <td>{{ team.goalsFor }}</td>
     <td>{{ team.goalsAgainst }}</td>
-    <td>{{ team.awayGoals }}</td>
     <td>{{ team.goalDifference }}</td>
   </tr>
 </template>

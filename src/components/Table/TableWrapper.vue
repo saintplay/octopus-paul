@@ -15,7 +15,6 @@
                 <th>PP</th>
                 <th>GF</th>
                 <th>GC</th>
-                <th>GV</th>
                 <th>DF</th>
               </tr>
             </thead>
@@ -84,7 +83,7 @@ export default {
       if (this.changeOnStart) {
         this.nextEvent()
       }
-    }, 1000)
+    }, 800)
   },
   data () {
     return {
@@ -101,7 +100,7 @@ export default {
   },
   computed: {
     orderedTeams () {
-      return orderBy(this.teams, ['points', 'goalDifference', 'awayGoals'], ['desc', 'desc', 'desc'])
+      return orderBy(this.teams, ['points', 'goalDifference', 'goalsFor'], ['desc', 'desc', 'desc'])
     },
     endOrActuality () {
       return this.currentEvent === eventCodes.end || this.currentJourney.noStartedYet
@@ -139,7 +138,6 @@ export default {
         awayTeam.goalsAgainst -= match.results.homeTeamGoals
 
         awayTeam.goalsFor -= match.results.awayTeamGoals
-        awayTeam.awayGoals -= match.results.awayTeamGoals
         homeTeam.goalsAgainst -= match.results.awayTeamGoals
 
         homeTeam.goalDifference -= match.results.homeTeamGoals - match.results.awayTeamGoals
@@ -199,7 +197,6 @@ export default {
         awayTeam.goalsAgainst += match.results.homeTeamGoals
 
         awayTeam.goalsFor += match.results.awayTeamGoals
-        awayTeam.awayGoals += match.results.awayTeamGoals
         homeTeam.goalsAgainst += match.results.awayTeamGoals
 
         homeTeam.goalDifference += match.results.homeTeamGoals - match.results.awayTeamGoals
