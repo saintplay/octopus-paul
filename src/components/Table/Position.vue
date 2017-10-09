@@ -1,7 +1,7 @@
 <template>
   <tr>
     <td>{{ rank }}</td>
-    <td> <img src="static/img/blank.gif" :class="'flag flag-'+team.code.toLowerCase()"> {{ team.name | capitalize }}</td>
+    <td> <img src="/static/img/blank.gif" :class="'flag flag-'+team.code.toLowerCase()"> {{ team.name | capitalize }}</td>
     <td>{{ team.points }}</td>
     <td>{{ team.won }}</td>
     <td>{{ team.draw }}</td>
