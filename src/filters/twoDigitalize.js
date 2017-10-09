@@ -1,4 +1,4 @@
-export default function capitalize (value) {
+export default function twoDigitalize (value) {
   if (isNaN(value)) {
     return value
   }

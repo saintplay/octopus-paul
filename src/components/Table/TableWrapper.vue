@@ -29,7 +29,7 @@
           <h3 class="title is-3">Partidos de la Jornada {{ currentJourney.journeyNumber + 1 | twoDigitalize }}</h3>
           <table class="table journey-matches-table">
             <tbody>
-              <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awayTeam" :match="match"/>
+              <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awayTeam" :match="match" :no-started="currentJourney.noStartedYet"/>
             </tbody>
           </table>
         </div>
@@ -48,7 +48,7 @@
               </div>
             </div>
             <div class="level-item has-text-centered">
-              <button class="button is-primary"  :disabled="currentEvent === eventCodes.end" @click="nextEvent()">Siguiente</button>
+              <button class="button is-primary"  :disabled="endOrActuality" @click="nextEvent()">Siguiente</button>
             </div>
           </nav>
         </div>
@@ -88,6 +88,9 @@ export default {
   computed: {
     orderedTeams () {
       return orderBy(this.teams, ['points', 'goalDifference', 'awayGoals'], ['desc', 'desc', 'desc'])
+    },
+    endOrActuality () {
+      return this.currentEvent === eventCodes.end || this.currentJourney.noStartedYet
     }
   },
   filters: {
@@ -157,6 +160,10 @@ export default {
       }
 
       this.currentJourney = this.journeys[journeyNumber]
+
+      if (this.currentJourney.noStartedYet) {
+        return
+      }
 
       this.currentJourney.matches.forEach((match) => {
         let homeTeam = teamNameByCode(match.homeTeam, this.teams)

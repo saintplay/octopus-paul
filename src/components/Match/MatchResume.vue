@@ -1,7 +1,7 @@
 <template>
   <tr>
     <td class="has-text-centered team-column">{{ teamNameByCode(match.homeTeam).name | capitalize }}</td>
-    <td class="has-text-centered">
+    <td v-if="!noStarted" class="has-text-centered">
       <strong>
         {{ match.results.homeTeamGoals }}
       </strong>
@@ -12,12 +12,16 @@
         {{ match.results.awayTeamGoals }}
       </strong>
     </td>
+    <td v-else>
+      <strong>{{ match.date | trimDate }}</strong>
+    </td>
     <td class="has-text-centered team-column">{{ teamNameByCode(match.awayTeam).name | capitalize }}</td>
   </tr>
 </template>
 
 <script>
 import capitalize from '@/filters/capitalize'
+import trimDate from '@/filters/trimDate'
 import { teamNameByCode } from '@/objects/team'
 
 export default {
@@ -26,6 +30,10 @@ export default {
     match: {
       type: Object,
       default: null
+    },
+    noStarted: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -34,7 +42,8 @@ export default {
     }
   },
   filters: {
-    capitalize
+    capitalize,
+    trimDate
   },
   methods: {
     teamNameByCode
