@@ -4500,6 +4500,10 @@ sass-loader@^6.0.6:
     lodash.tail "^4.1.1"
     pify "^3.0.0"
 
+sass-util@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/sass-util/-/sass-util-1.0.4.tgz#cb1dc88017940c1f9d1623f04abac11713b40120"
+
 sax@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"

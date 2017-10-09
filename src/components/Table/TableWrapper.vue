@@ -25,32 +25,32 @@
           </table>
         </div>
 
-        <div v-if="currentEvent === eventCodes.journey" class="column column-30 column-offset-10">
-          <h3 class="title is-3">Partidos de la Jornada {{ currentJourney.journeyNumber + 1 | twoDigitalize }}</h3>
-          <table class="table journey-matches-table">
-            <tbody>
-              <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awayTeam" :match="match" :no-started="currentJourney.noStartedYet"/>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column is-half is-offset-one-quarter">
-          <nav class="level">
-            <div class="level-item has-text-centered">
-              <button class="button is-info" :disabled="currentEvent === eventCodes.start" @click="previousEvent()">Anterior</button>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">{{ eventToSpanish(currentEvent) }}</p>
-                <p v-if="currentEvent === eventCodes.journey" class="title">{{ currentJourney.journeyNumber + 1 | twoDigitalize }}</p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <button class="button is-primary"  :disabled="endOrActuality" @click="nextEvent()">Siguiente</button>
-            </div>
-          </nav>
+        <div class="column column-30 column-offset-10">
+          <div v-if="currentEvent === eventCodes.journey">
+            <h3 class="title is-3">Partidos de la Jornada {{ currentJourney.journeyNumber + 1 | twoDigitalize }}</h3>
+            <table class="table journey-matches-table mb-0">
+              <tbody>
+                <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awayTeam" :match="match" :no-started="currentJourney.noStartedYet"/>
+              </tbody>
+            </table>
+            <p class="help">También puedes usar las teclas direccionales!</p>
+          </div>
+          <div class="pt-30">
+              <nav class="level">
+                <div class="level-item has-text-centered">
+                  <button class="button is-info" :disabled="currentEvent === eventCodes.start" @click="previousEvent()">Anterior</button>
+                </div>
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">{{ eventToSpanish(currentEvent) }}</p>
+                    <p v-if="currentEvent === eventCodes.journey" class="title">{{ currentJourney.journeyNumber + 1 | twoDigitalize }}</p>
+                  </div>
+                </div>
+                <div class="level-item has-text-centered">
+                  <button class="button is-primary"  :disabled="endOrActuality" @click="nextEvent()">Siguiente</button>
+                </div>
+              </nav>
+          </div>
         </div>
       </div>
     </div>
@@ -72,6 +72,16 @@ export default {
     this.journeys = require('__static/data/CONMEBOL/calendar').rounds[0].fixture
     this.teams = require('__static/data/CONMEBOL/teams')
     setScoresToZero(this.teams)
+  },
+  mounted () {
+    const vm = this
+    window.addEventListener('keyup', function (event) {
+      if (event.keyCode === 37) {
+        vm.previousEvent()
+      } if (event.keyCode === 39) {
+        vm.nextEvent()
+      }
+    })
   },
   data () {
     return {
@@ -98,7 +108,9 @@ export default {
   },
   methods: {
     previousEvent () {
-      if (this.currentEvent === eventCodes.end) {
+      if (this.currentEvent === eventCodes.start) {
+        return
+      } else if (this.currentEvent === eventCodes.end) {
         this.currentEvent = eventCodes.journey
       }
 
@@ -156,11 +168,12 @@ export default {
       if (this.currentEvent === eventCodes.start) {
         this.currentEvent = eventCodes.journey
         journeyNumber = 0
+      } else if (this.endOrActuality) {
+        return
       }
 
       if (this.currentJourney.journeyNumber === this.journeys.length) {
         this.currentEvent = eventCodes.end
-        this.currentJourney = { journeyNumber: this.journeys.length }
         return
       }
 
@@ -214,7 +227,7 @@ export default {
 
 <style lang="scss" scoped>
 table.journey-matches-table {
-  min-width: 420px;
+  width: 100%;
 }
 </style>
 
