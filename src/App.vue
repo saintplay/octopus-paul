@@ -36,6 +36,7 @@ $scu-margins: (0 5 10 15 20 25 30);
 
 @import "assets/sass/colors";
 @import "assets/sass/animations/all";
+@import "assets/sass/flags";
 
 html, body {
   height: 100%;

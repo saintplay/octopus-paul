@@ -1,6 +1,9 @@
 <template>
   <tr>
-    <td class="has-text-centered team-column">{{ teamNameByCode(match.homeTeam).name | capitalize }}</td>
+    <td class="has-text-centered team-column">
+      <img src="static/img/blank.gif" :class="'flag flag-'+match.homeTeam.toLowerCase()">
+      {{ teamNameByCode(match.homeTeam).name | capitalize }}
+    </td>
     <td v-if="!noStarted" class="has-text-centered">
       <strong>
         {{ match.results.homeTeamGoals }}
@@ -15,7 +18,10 @@
     <td v-else>
       <strong>{{ match.date | trimDate }}</strong>
     </td>
-    <td class="has-text-centered team-column">{{ teamNameByCode(match.awayTeam).name | capitalize }}</td>
+    <td class="has-text-centered team-column">
+      <img src="static/img/blank.gif" :class="'flag flag-'+match.awayTeam.toLowerCase()">
+      {{ teamNameByCode(match.awayTeam).name | capitalize }}
+    </td>
   </tr>
 </template>
 
