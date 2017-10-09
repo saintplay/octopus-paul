@@ -8,7 +8,8 @@
     <td>{{ team.lost }}</td>
     <td>{{ team.goalsFor }}</td>
     <td>{{ team.goalsAgainst }}</td>
-    <td>{{ goalDifference }}</td>
+    <td>{{ team.awayGoals }}</td>
+    <td>{{ team.goalDifference }}</td>
   </tr>
 </template>
 
@@ -25,11 +26,6 @@ export default {
     team: {
       type: Object,
       default: null
-    }
-  },
-  computed: {
-    goalDifference () {
-      return this.team.goalsFor - this.team.goalsAgainst
     }
   },
   filters: {

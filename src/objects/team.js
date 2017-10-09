@@ -20,5 +20,7 @@ export function setScoresToZero (teams) {
     Vue.set(team, 'lost', 0)
     Vue.set(team, 'goalsFor', 0)
     Vue.set(team, 'goalsAgainst', 0)
+    Vue.set(team, 'awayGoals', 0)
+    Vue.set(team, 'goalDifference', 0)
   })
 }

@@ -15,6 +15,7 @@
                 <th>PP</th>
                 <th>GF</th>
                 <th>GC</th>
+                <th>GV</th>
                 <th>DF</th>
               </tr>
             </thead>
@@ -86,7 +87,7 @@ export default {
   },
   computed: {
     orderedTeams () {
-      return orderBy(this.teams, ['points'], ['desc'])
+      return orderBy(this.teams, ['points', 'goalDifference', 'awayGoals'], ['desc', 'desc', 'desc'])
     }
   },
   filters: {
@@ -112,7 +113,11 @@ export default {
         awayTeam.goalsAgainst -= match.results.homeTeamGoals
 
         awayTeam.goalsFor -= match.results.awayTeamGoals
+        awayTeam.awayGoals -= match.results.awayTeamGoals
         homeTeam.goalsAgainst -= match.results.awayTeamGoals
+
+        homeTeam.goalDifference -= match.results.homeTeamGoals - match.results.awayTeamGoals
+        awayTeam.goalDifference -= match.results.awayTeamGoals - match.results.homeTeamGoals
 
         if (match.results.homeTeamGoals > match.results.awayTeamGoals) {
           homeTeam.won --
@@ -161,7 +166,11 @@ export default {
         awayTeam.goalsAgainst += match.results.homeTeamGoals
 
         awayTeam.goalsFor += match.results.awayTeamGoals
+        awayTeam.awayGoals += match.results.awayTeamGoals
         homeTeam.goalsAgainst += match.results.awayTeamGoals
+
+        homeTeam.goalDifference += match.results.homeTeamGoals - match.results.awayTeamGoals
+        awayTeam.goalDifference += match.results.awayTeamGoals - match.results.homeTeamGoals
 
         if (match.results.homeTeamGoals > match.results.awayTeamGoals) {
           homeTeam.won ++
