@@ -14,6 +14,8 @@ Demo: <http://octopus-paul.netlify.com/>
 - Sugiere más abriendo un *issue*
 
 ## Guía de contribución
+Desde ideas y diseño hasta código y automatización, toda sugerencia y ayuda es bienvenida.
+
 Por favor revisar el [tablero TODO](https://github.com/saintplay/octopus-paul/projects/1) para tener un panorama general de lo que se viene desarrollando.
 
 Todos los **pull request** se deberán hacer al branch **development**(*branch por defecto*)
