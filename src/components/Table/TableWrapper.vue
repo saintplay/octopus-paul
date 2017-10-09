@@ -19,9 +19,9 @@
                 <th>DF</th>
               </tr>
             </thead>
-            <tbody>
+            <transition-group name="flip-list" tag="tbody">
               <position v-for="(team, teamIndex) in orderedTeams" :key="team.code" :team="team" :rank="teamIndex + 1"/>
-            </tbody>
+            </transition-group>
           </table>
         </div>
 
