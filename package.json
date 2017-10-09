@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bulma": "^0.5.3",
+    "lodash.orderby": "^4.6.0",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0"
   },

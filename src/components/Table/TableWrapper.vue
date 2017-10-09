@@ -19,7 +19,7 @@
               </tr>
             </thead>
             <tbody>
-              <position v-for="(team, teamIndex) in teams" :key="team.code" :team="team" :rank="teamIndex + 1"/>
+              <position v-for="(team, teamIndex) in orderedTeams" :key="team.code" :team="team" :rank="teamIndex + 1"/>
             </tbody>
           </table>
         </div>
@@ -57,6 +57,8 @@
 </template>
 
 <script>
+import orderBy from 'lodash.orderby'
+
 import Position from './Position'
 import MatchResume from '../Match/MatchResume'
 import { eventCodes, eventToSpanish } from '@/objects/qualifierEvent'
@@ -80,6 +82,11 @@ export default {
       matches: [],
       teams: [],
       eventCodes
+    }
+  },
+  computed: {
+    orderedTeams () {
+      return orderBy(this.teams, ['points'], ['desc'])
     }
   },
   filters: {
