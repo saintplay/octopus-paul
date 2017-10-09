@@ -108,6 +108,11 @@ export default {
         this.currentEvent = eventCodes.start
       }
 
+      if (this.currentJourney.noStartedYet) {
+        this.currentJourney = this.journeys[journeyNumber]
+        return
+      }
+
       this.currentJourney.matches.forEach((match) => {
         let homeTeam = teamNameByCode(match.homeTeam, this.teams)
         let awayTeam = teamNameByCode(match.awayTeam, this.teams)
