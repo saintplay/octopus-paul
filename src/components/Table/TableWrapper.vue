@@ -29,9 +29,7 @@
           <div v-if="currentEvent === eventCodes.journey">
             <h3 class="title is-3">Partidos de la Jornada {{ currentJourney.journeyNumber + 1 | twoDigitalize }}</h3>
             <table class="table journey-matches-table mb-0">
-              <tbody>
-                <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awayTeam" :match="match" :no-started="currentJourney.noStartedYet"/>
-              </tbody>
+              <match-resume v-for="match in currentJourney.matches" :key="match.homeTeam + match.awayTeam" :match="match" :no-started="currentJourney.noStartedYet"/>
             </table>
             <p class="help">También puedes usar las teclas direccionales!</p>
           </div>
@@ -82,6 +80,11 @@ export default {
         vm.nextEvent()
       }
     })
+    setTimeout(() => {
+      if (this.changeOnStart) {
+        this.nextEvent()
+      }
+    }, 1000)
   },
   data () {
     return {
@@ -92,7 +95,8 @@ export default {
       journeys: [],
       matches: [],
       teams: [],
-      eventCodes
+      eventCodes,
+      changeOnStart: true
     }
   },
   computed: {
@@ -108,6 +112,8 @@ export default {
   },
   methods: {
     previousEvent () {
+      this.changeOnStart = false
+
       if (this.currentEvent === eventCodes.start) {
         return
       } else if (this.currentEvent === eventCodes.end) {
@@ -163,6 +169,8 @@ export default {
       }
     },
     nextEvent () {
+      this.changeOnStart = false
+
       let journeyNumber = this.currentJourney.journeyNumber + 1
 
       if (this.currentEvent === eventCodes.start) {
