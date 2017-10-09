@@ -8,7 +8,7 @@
             <thead>
               <tr>
                 <th>N°</th>
-                <th>EQUIPO</th>
+                <th colspan="2">EQUIPO</th>
                 <th>PTS</th>
                 <th>PG</th>
                 <th>PE</th>
