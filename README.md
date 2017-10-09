@@ -36,3 +36,5 @@ npm run build
 # or
 yarn build
 ```
+
+## Contribuidores
