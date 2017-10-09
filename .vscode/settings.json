@@ -1,0 +1,8 @@
+{
+  "files.eol": "\n",
+  "search.exclude": {
+    "app": true,
+    "package": true,
+    "dist": true
+  }
+}
