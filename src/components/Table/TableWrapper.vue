@@ -178,7 +178,7 @@ export default {
         return
       }
 
-      if (this.currentJourney.journeyNumber === this.journeys.length) {
+      if (this.currentJourney.journeyNumber + 1 === this.journeys.length) {
         this.currentEvent = eventCodes.end
         return
       }
