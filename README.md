@@ -40,4 +40,4 @@ yarn build
 ```
 
 ## Contribuidores
-- [Cristofer fuentes](https://github.com/cristoferfb)
+- [Cristofer Fuentes](https://github.com/cristoferfb)
