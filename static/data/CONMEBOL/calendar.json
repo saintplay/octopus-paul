@@ -917,38 +917,57 @@
         },
         {
           "journeyNumber": 17,
-          "noStartedYet": true,
           "matches": [
             {
               "homeTeam": "BR",
               "awayTeam": "CL",
-              "date": "2017-10-10T01:30:00",
+              "results": {
+                "homeTeamGoals": 3,
+                "awayTeamGoals": 0
+              },
+              "date": "2017-10-11T01:30:00",
               "stadium": "Estádio Cícero Pompeu de Toledo (Morumbi)"
             },
             {
               "homeTeam": "EC",
               "awayTeam": "AR",
-              "date": "2017-10-10T01:30:00",
+              "results": {
+                "homeTeamGoals": 1,
+                "awayTeamGoals": 3
+              },
+              "date": "2017-10-11T01:30:00",
               "stadium": "Olimpico Atahualpa"
             },
             {
               "homeTeam": "PY",
               "awayTeam": "VE",
-              "date": "2017-10-10T01:30:00",
+              "results": {
+                "homeTeamGoals": 0,
+                "awayTeamGoals": 1
+              },
+              "date": "2017-10-11T01:30:00",
               "stadium": "Defensores del Chaco"
             },
             {
               "homeTeam": "PE",
               "awayTeam": "CO",
-              "date": "2017-10-10T01:30:00",
+              "results": {
+                "homeTeamGoals": 1,
+                "awayTeamGoals": 1
+              },
+              "date": "2017-10-11T01:30:00",
               "stadium": "Estadio Nacional de Lima"
             },
             {
               "homeTeam": "UY",
               "awayTeam": "BO",
-              "date": "2017-10-10T01:30:00",
+              "results": {
+                "homeTeamGoals": 4,
+                "awayTeamGoals": 2
+              },
+              "date": "2017-10-11T01:30:00",
               "stadium": "Estadio Centenario"
-            }            
+            }
           ]
         }
       ]
