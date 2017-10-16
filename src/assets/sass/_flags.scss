@@ -5,6 +5,7 @@
 .flag {
   display: inline-block;
   width: 16px;
+  min-width: 16px;
   height: 11px;
   background: url('/static/img/flags.png') no-repeat;
   &.flag-sv {
